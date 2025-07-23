@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: arthya-ml
+    runtime: python
+    buildCommand: ""
+    startCommand: python ml_server.py
+    envVars:
+      - key: MODEL_PATH
+        value: lid.176.bin
